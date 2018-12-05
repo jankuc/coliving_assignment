@@ -23,7 +23,7 @@ class Groupings(addressList: List[AddressData]) {
     * First one holds the rest of the individuals from the input
     *
     * @param toExamine    : List that we want to
-    * @param liveTogether : Nil when called
+    * @param liveTogether : Nil when called, has the resulting group that lives together in the end
     * @return Two lists.
     */
   @tailrec
@@ -48,7 +48,7 @@ class Groupings(addressList: List[AddressData]) {
   /** getGroups takes list of addressData, outputs list of the co-living groups
     *
     * @param addressList : addressData list - sorted by fromdate
-    * @param result      : Nil
+    * @param result      : initialy Nil, contains the result in the end
     * @return List of the co-living groups
     */
   @tailrec
